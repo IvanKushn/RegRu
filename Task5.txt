@@ -1,0 +1,13 @@
+В директории /var/logs/archive лежит файл backup.tar.gz.
+
+1) установить права на запись в эту директорию для всех пользователей;
+chmod o+w /var/logs/archive
+
+2) распаковать архив backup.tar.gz;
+tar -xf /var/logs/archive/backup.tar.gz
+
+3) удалить все файлы имена которых заканчиваются на .tmp;
+rm -f /var/logs/archive/*.tmp
+
+4) вывести имена всех файлов которые содержат строку user deleted.
+grep -Ril "user deleted"
