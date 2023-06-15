@@ -10,4 +10,4 @@ tar -xf /var/logs/archive/backup.tar.gz
 rm -f /var/logs/archive/*.tmp
 
 4) вывести имена всех файлов которые содержат строку user deleted.
-grep -Ril "user deleted"
+grep -Ril "user deleted" /var/logs/archive
